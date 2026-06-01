@@ -1,0 +1,9 @@
+on:
+    workflow_dipatch:
+
+jobs:
+    deploy:
+        runs-on:
+        steps:
+            - name: Deploy application
+              run: echo "Deploying the Application..."
