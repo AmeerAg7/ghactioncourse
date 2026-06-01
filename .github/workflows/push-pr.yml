@@ -9,3 +9,15 @@ on:
     branches:
       - main
       - 'release/*'
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.2
+        
+      
+      - name: Run tests
+        run: npm test
