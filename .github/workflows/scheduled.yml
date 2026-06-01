@@ -3,7 +3,7 @@ on:
     - cron: "0 0 * * *" # Runs every day at midnight
 
 jobs:
-  daily-task"
+  daily-task:
     runs-on: ubuntu-latest
     steps:
       - name: Print Daily Report
