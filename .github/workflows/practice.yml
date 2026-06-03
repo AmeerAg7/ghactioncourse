@@ -1,0 +1,17 @@
+name: trigger type workflow
+
+on: 
+  push:
+    branches:
+      - test
+
+jobs:
+  testing_example:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test1before
+        run: echo "test 1 before push passed !!"
+
+      # - name: test2after
+      #   run: echo "test 2 after push passed !!!"
