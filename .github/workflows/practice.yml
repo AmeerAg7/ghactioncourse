@@ -19,8 +19,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6.0.2
 
-      # - name: display test.sh code
-      #   run: cat test.sh
-
-      - name: display current directory
-        run: pwd
+      - name: display test.sh code
+        run: cat src/test.sh
