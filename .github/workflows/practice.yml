@@ -15,3 +15,9 @@ jobs:
 
       - name: test2after
         run: echo "test 2 after push passed !!!"
+
+      - name: Checkout code
+        uses: actions/checkout@v6.0.2
+
+      - name: display test.sh code
+        run: cat test.sh
