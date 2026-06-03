@@ -21,3 +21,6 @@ jobs:
 
       - name: display test.sh code
         run: cat src/test.sh
+      
+      - name: Run tests
+        run: npm test
