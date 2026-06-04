@@ -1,0 +1,16 @@
+name: manual api trigger
+
+on:
+  repository_dispatch:
+    types: [incident_report]
+
+jobs:
+  handle_incident:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Handle incident report
+        run: echo "Handling incident report"
+
+
+
+        
